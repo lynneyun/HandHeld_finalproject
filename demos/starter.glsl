@@ -58,7 +58,7 @@ void main() {
 
     //gl_FragColor = vec4(gradient,alpha);
   
-  if (alpha > 0.25 && color[2] < 0.9) {
+  if (alpha > 0.25 && color[2] < 0.5+0.7*sin(time)) {
     gl_FragColor = vec4(gradient,alpha);
   } else {
     gl_FragColor = vec4(color,1);
